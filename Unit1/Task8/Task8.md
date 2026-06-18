@@ -1,14 +1,22 @@
-Tutorial Task 8: Swap Two Variables
-1. Problem Statement
+# Tutorial Task 8: Swap Two Variables
+
+## 1. Problem Statement
 
 Write a Python program to interchange the values of two variables and display the result.
 
-2. Algorithm
-Start
-Input two variables A and B
-Swap the values of A and B using a temporary variable or Python's multiple assignment
-Display the swapped values
-Stop
+---
+
+## 2. Algorithm
+
+1. Start
+2. Input two variables A and B
+3. Swap the values of A and B using a temporary variable or Python's multiple assignment
+4. Display the swapped values
+5. Stop
+
+---
+
+## 3. Flowchart
 
 ```mermaid
 flowchart TD
@@ -26,21 +34,39 @@ flowchart TD
     E --> F
 ```
 
-4. Python Source Code
+
+---
+
+## 4. Python Source Code
+
+```python
 a = int(input("Enter First Number: "))
 b = int(input("Enter Second Number: "))
 
-# Swapping values
+
 a, b = b, a
 
 print("After Swapping:")
 print("A =", a)
 print("B =", b)
-5. Sample Input/Output
-Input
+```
+
+---
+
+## 5. Sample Input/Output
+
+### Input
+
+```text
 Enter First Number: 10
 Enter Second Number: 20
-Output
+```
+
+### Output
+
+```text
 After Swapping:
 A = 20
 B = 10
+```
+
