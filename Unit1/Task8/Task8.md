@@ -35,7 +35,7 @@ flowchart TD
 ```
 
 
----
+
 
 ## 4. Python Source Code
 
@@ -43,43 +43,25 @@ flowchart TD
 a = int(input("Enter First Number: "))
 b = int(input("Enter Second Number: "))
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f4f802fd78c727ac062a1ef512b37be8e748408
 a, b = b, a
 
 print("After Swapping:")
 print("A =", a)
 print("B =", b)
-<<<<<<< HEAD
-```
 
----
-
-## 5. Sample Input/Output
-
-### Input
-
-```text
-=======
 
 5. Sample Input/Output
 
 Input
->>>>>>> 9f4f802fd78c727ac062a1ef512b37be8e748408
+
 Enter First Number: 10
 Enter Second Number: 20
-```
+
 
 ### Output
 
-```text
+
 After Swapping:
 A = 20
 B = 10
-<<<<<<< HEAD
-```
 
-=======
->>>>>>> 9f4f802fd78c727ac062a1ef512b37be8e748408
