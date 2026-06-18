@@ -17,7 +17,13 @@
 
 ```mermaid
     flowchart TD
-        id1(Start) --> id2(Stop)
+        A([Start]) --> B[/Please Enter a Number/]
+        B --> C[Compute Number mod 2]
+        C --> D{Result = 0?}
+        D -->|Yes| E[/Given Number is Even/]
+        D -->|No| F[/Given Number is Odd/]
+        E --> G([Stop])
+        F --> G
 ```
 
 
