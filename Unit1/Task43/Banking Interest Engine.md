@@ -21,7 +21,6 @@ Develop a Python application to calculate savings interest and maturity values f
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD

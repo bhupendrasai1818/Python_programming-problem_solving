@@ -21,7 +21,6 @@ Develop a Python application that automatically applies discount policies based 
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD
