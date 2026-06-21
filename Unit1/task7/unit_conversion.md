@@ -36,13 +36,13 @@ The program should accept input from the user and display the converted values.
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[/Input Kilometers (KM)/]
+    A([Start]) --> B[Input Kilometers KM]
     B --> C[Meters = KM * 1000]
-    C --> D[/Input Meters (M)/]
+    C --> D[Input Meters M]
     D --> E[Centimeters = M * 100]
-    E --> F[/Input Kilograms (KG)/]
+    E --> F[Input Kilograms KG]
     F --> G[Grams = KG * 1000]
-    G --> H[/Display Results/]
+    G --> H[Display Results]
     H --> I([End])
 ```
 
