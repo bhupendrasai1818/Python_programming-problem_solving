@@ -85,8 +85,10 @@ Enter weight in kilograms: 2
 ### Sample Output
 
 ```text
------ Conversion Results -----
 5.0 kilometers = 5000.0 meters
 10.0 meters = 1000.0 centimeters
 2.0 kilograms = 2000.0 grams
 ```
+
+### screenshot
+![alt text](image.png)

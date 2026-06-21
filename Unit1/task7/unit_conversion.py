@@ -1,4 +1,3 @@
-```python
 km = float(input("Enter distance in kilometers: "))
 meters = km * 1000
 m = float(input("Enter distance in meters: "))
@@ -9,4 +8,3 @@ print("\n----- Conversion Results -----")
 print(km, "kilometers =", meters, "meters")
 print(m, "meters =", centimeters, "centimeters")
 print(kg, "kilograms =", grams, "grams")
-```
