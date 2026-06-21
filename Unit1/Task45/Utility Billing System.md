@@ -75,10 +75,9 @@ Enter Internet Bill Amount: 700
 Total Utility Bill = 3200.0
 ```
 ### Screenshot
-<<<<<<< HEAD
-5
-![alt text](<Screenshot 2026-06-21 163301.png>)
-=======
 
 ![alt text](<Screenshot 2026-06-21 163301.png>)
->>>>>>> c9d5178a34a0ea6d583ef6f1832cbecfa3c4d720
+
+
+
+
