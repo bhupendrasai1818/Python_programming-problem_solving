@@ -20,8 +20,6 @@ Develop a Python application that automates invoice generation and payment calcu
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
-
 ```mermaid
 flowchart TD
     A([Start])
