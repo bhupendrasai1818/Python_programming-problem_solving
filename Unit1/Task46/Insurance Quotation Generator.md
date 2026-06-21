@@ -21,7 +21,6 @@ Develop a Python application to generate insurance quotations based on customer 
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD
