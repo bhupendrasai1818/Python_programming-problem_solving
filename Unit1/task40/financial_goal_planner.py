@@ -3,7 +3,6 @@ monthly_savings = float(input("Enter monthly savings amount: "))
 
 months_required = goal_amount / monthly_savings
 
-print("\n----- Financial Goal Summary -----")
 print("Goal Amount:", goal_amount)
 print("Monthly Savings:", monthly_savings)
 print("Estimated Months Required:", round(months_required, 2))
