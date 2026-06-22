@@ -66,5 +66,5 @@ Enter Rate Per Unit: 5
 ```text
 Water Bill = 750.0
 ```
-
-
+## 6. Screenshots
+![alt text](image.png)
