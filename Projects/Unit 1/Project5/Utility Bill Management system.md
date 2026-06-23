@@ -28,23 +28,19 @@ Develop a Python GUI application using Tkinter to calculate and manage household
 
 ## 3. Flowchart
 
-```text
-
+```mermaid
+flowchart TD
     A([Start])
-    B[Open Utility Bill Management System Window]
-    C[/Enter Customer Name/]
-    D[/Enter Electricity Units/]
-    E[/Enter Water Units/]
-    F[/Enter Gas Units/]
-    G[Click Calculate Bill Button]
-    H{Valid Input?}
-    I[Calculate Electricity Bill]
-    J[Calculate Water Bill]
-    K[Calculate Gas Bill]
-    L[Calculate Total Bill]
-    M[/Display Customer Details and Bill Summary/]
-    N[/Show Error Message/]
-    O([Stop])
+    B[/Input Customer Name/]
+    C[/Input Electricity Units/]
+    D[/Input Water Units/]
+    E[/Input Gas Units/]
+    F[Calculate Electricity Bill]
+    G[Calculate Water Bill]
+    H[Calculate Gas Bill]
+    I[Calculate Total Bill]
+    J[/Display Customer Details and Bill Summary/]
+    K([Stop])
 
     A --> B
     B --> C
@@ -53,17 +49,10 @@ Develop a Python GUI application using Tkinter to calculate and manage household
     E --> F
     F --> G
     G --> H
-    H -- Yes --> I
+    H --> I
     I --> J
     J --> K
-    K --> L
-    L --> M
-    M --> O
-    H -- No --> N
-    N --> O
 ```
-
----
 
 ## 4. Python Source Code (Frontend - Tkinter)
 
@@ -186,3 +175,4 @@ Total Bill : ₹860.0
 
 ## 6. Screenshots
 
+![alt text](image.png)
