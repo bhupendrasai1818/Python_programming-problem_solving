@@ -1,6 +1,5 @@
 income = float(input("Enter Annual Income: "))
 
-# Tax calculation based on slabs
 if income <= 250000:
     tax = 0
 

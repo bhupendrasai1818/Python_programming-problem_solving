@@ -2,13 +2,11 @@
 
 ## 1. Problem Statement
 
-Develop a Python program to calculate the income tax payable based 
-on annual income and applicable tax slabs. 
+Write a Python program to calculate the income tax payable based on annual income and applicable tax slabs.
 
 ---
 
 ## 2. Algorithm
-
 1. Start
 2. Input annual income
 3. Check the income slab:
@@ -19,11 +17,9 @@ on annual income and applicable tax slabs.
    * If income > ₹10,00,000 → Tax = ₹1,12,500 + 30% of amount above ₹10,00,000
 4. Display the tax payable
 5. Stop
-
 ---
 
 ## 3. Flowchart
-
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter Annual Income/]
@@ -45,7 +41,6 @@ flowchart TD
 
     J --> K([Stop])
 ```
-
 ---
 
 ## 4. Python Source Code
@@ -68,6 +63,7 @@ else:
     tax = 112500 + (income - 1000000) * 0.30
 
 print("\nIncome Tax Payable = ₹", tax)
+
 ```
 
 ---
@@ -106,6 +102,3 @@ Income Tax Payable = ₹ 72500.0
 
 ## 6. Screenshots
 ![alt text]({29731636-3C15-46BD-B1B2-F515404468B0}.png)
-
-
----
