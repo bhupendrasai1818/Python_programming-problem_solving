@@ -1,12 +1,15 @@
-annual_income = float(input("Enter Annual Income: "))
+income = float(input("Enter Annual Income: "))
 
-if annual_income <= 250000:
+if income <= 250000:
     tax = 0
-elif annual_income <= 500000:
-    tax = annual_income * 0.05
-elif annual_income <= 1000000:
-    tax = annual_income * 0.20
-else:
-    tax = annual_income * 0.30
 
-print("Income Tax =", tax)
+elif income <= 500000:
+    tax = (income - 250000) * 0.05
+
+elif income <= 1000000:
+    tax = 12500 + (income - 500000) * 0.20
+
+else:
+    tax = 112500 + (income - 1000000) * 0.30
+
+print("\nIncome Tax Payable = ₹", tax)
