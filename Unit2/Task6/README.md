@@ -41,25 +41,28 @@ Examples:
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[/Enter Number num/]
+    A([Start]) --> B[/Input Number num/]
     B --> C{num < 0?}
 
-    C -->|Yes| D[Display "Factorial not defined"]
-    D --> H([Stop])
+    C -->|Yes| D[Print Error Message]
+    D --> K([Stop])
 
-    C -->|No| E[Initialize factorial = 1]
-    E --> F[For i = 1 to num]
-    F --> G[factorial = factorial * i]
-    G --> F
+    C -->|No| E[Set factorial = 1]
+    E --> F[Set i = 1]
 
-    F --> I[Display Factorial]
-    I --> H
+    F --> G{i <= num?}
+
+    G -->|Yes| H[factorial = factorial * i]
+    H --> I[i = i + 1]
+    I --> G
+
+    G -->|No| J[Print Factorial]
+    J --> K([Stop])
 ```
 
 ## 4. Python Source Code
 
-```python id="2mtnrj"
-# Program to find factorial of a number
+```python 
 
 num = int(input("Enter a number: "))
 
