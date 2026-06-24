@@ -40,23 +40,38 @@ Examples:
 
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number num/]
+    B --> C[Store original = num]
+    C --> D[Set reverse = 0]
 
+    D --> E{num > 0?}
+
+    E -->|Yes| F[digit = num mod 10]
+    F --> G[reverse = reverse * 10 + digit]
+    G --> H[num = num div 10]
+    H --> E
+
+    E -->|No| I{original = reverse?}
+
+    I -->|Yes| J[Display Palindrome Number]
+    I -->|No| K[Display Not a Palindrome Number]
+
+    J --> L([Stop])
+    K --> L
+```
 
 ## 4. Python Source Code
 
-```python id="skspnn"
-# Program to check whether a number is palindrome
-
+```python
 num = int(input("Enter a number: "))
-
 original = num
 reverse = 0
-
 while num > 0:
     digit = num % 10
     reverse = reverse * 10 + digit
     num = num // 10
-
 if original == reverse:
     print(original, "is a Palindrome Number")
 else:

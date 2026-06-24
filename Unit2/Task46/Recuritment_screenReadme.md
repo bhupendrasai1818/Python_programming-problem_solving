@@ -1,58 +1,46 @@
-# Candidate Eligibility and Attendance Alert System Using Python
+# Candidate Eligibility Evaluation System Using Python
 
 ## 1. Problem Statement
 
-Develop a Python application to evaluate candidate eligibility based on predefined recruitment criteria and generate alerts for low attendance.
+Develop a Python application to evaluate candidate eligibility based on predefined recruitment criteria.
+
+The application should:
+
+* Accept candidate details.
+* Check eligibility based on recruitment requirements.
+* Generate a recruitment decision.
+* Use control structures, strings, and functions.
 
 ### Recruitment Criteria
 
-* Age must be 18 years or above.
-* Qualification must be Bachelor's Degree.
-* Experience must be at least 2 years.
-* Required skill: Python.
-* Attendance must be 75% or above.
-
-The application should use:
-
-* Functions
-* Strings
-* Control Structures (if-else)
+* Minimum Age: 18 years
+* Minimum Qualification: Bachelor's Degree
+* Minimum Experience: 2 years
+* Required Skill: Python
 
 ---
 
 ## 2. Algorithm
 
 1. Start the program.
-2. Input candidate details:
-
-   * Name
-   * Age
-   * Qualification
-   * Experience
-   * Skill
-   * Attendance Percentage
-3. Check recruitment eligibility:
+2. Input candidate name.
+3. Input age.
+4. Input qualification.
+5. Input years of experience.
+6. Input primary skill.
+7. Check whether:
 
    * Age ≥ 18
    * Qualification = Bachelor's Degree
    * Experience ≥ 2 years
    * Skill = Python
-4. If all conditions are satisfied:
+8. If all conditions are satisfied:
 
-   * Candidate is Eligible.
-5. Otherwise:
+   * Display "Eligible for Recruitment".
+9. Otherwise:
 
-   * Candidate is Not Eligible.
-6. Check attendance:
-
-   * If attendance < 75%
-
-     * Generate Low Attendance Alert.
-   * Else
-
-     * Attendance Satisfactory.
-7. Display results.
-8. Stop the program.
+   * Display "Not Eligible for Recruitment".
+10. Stop the program.
 
 ---
 
@@ -62,16 +50,18 @@ The application should use:
 flowchart TD
     A([Start]) --> B[Enter Candidate Details]
 
-    B --> C{Eligibility Criteria Met?}
+    B --> C{"Age >= 18?"}
+    C -->|No| H[Not Eligible]
+    C -->|Yes| D{"Bachelor Degree?"}
 
-    C -->|No| D[Display Not Eligible]
-    C -->|Yes| E[Display Eligible]
+    D -->|No| H
+    D -->|Yes| E{"Experience >= 2 Years?"}
 
-    E --> F{Attendance >= 75%?}
-    D --> F
+    E -->|No| H
+    E -->|Yes| F{"Python Skill?"}
 
-    F -->|Yes| G[Attendance Satisfactory]
-    F -->|No| H[Generate Low Attendance Alert]
+    F -->|No| H
+    F -->|Yes| G[Eligible for Recruitment]
 
     G --> I([Stop])
     H --> I
@@ -82,36 +72,32 @@ flowchart TD
 ## 4. Python Source Code
 
 ```python
-def check_eligibility(age, qualification, experience, skill):
+
+def check_eligibility(name, age, qualification, experience, skill):
     qualification = qualification.lower()
     skill = skill.lower()
-    if age >= 18 and qualification in ["bachelor", "bachelor's degree", "bachelors"] and \
-       experience >= 2 and skill == "python":
-        return True
-    else:
-        return False
-
-def attendance_alert(attendance):
-    if attendance < 75:
-        return f"ALERT: Low Attendance ({attendance:.2f}%)"
-    else:
-        return f"Attendance Satisfactory ({attendance:.2f}%)"
+    if age < 18:
+        return f"{name} is NOT Eligible (Age below 18)."
+    if qualification not in ["bachelor", "bachelor's degree", "bachelors","b tech"]:
+        return f"{name} is NOT Eligible (Bachelor's Degree required)."
+    if experience < 2:
+        return f"{name} is NOT Eligible (Minimum 2 years experience required)."
+    if skill != "python":
+        return f"{name} is NOT Eligible (Python skill required)."
+    return f"{name} is Eligible for Recruitment."
 
 def main():
-    print("===== Recruitment Evaluation System =====")
+    print("===== Candidate Eligibility Evaluation System =====")
     name = input("Enter Candidate Name: ")
     age = int(input("Enter Age: "))
     qualification = input("Enter Qualification: ")
-    experience = float(input("Enter Experience (Years): "))
+    experience = float(input("Enter Years of Experience: "))
     skill = input("Enter Primary Skill: ")
-    attendance = float(input("Enter Attendance Percentage: "))
-    eligible = check_eligibility( age, qualification, experience, skill)
-    print("\n===== Evaluation Report =====")
-    if eligible:
-        print(f"{name} is ELIGIBLE for recruitment.")
-    else:
-        print(f"{name} is NOT ELIGIBLE for recruitment.")
-    print(attendance_alert(attendance))
+    result = check_eligibility(name,age,qualification,experience,skill)
+    print("\nRecruitment Result")
+    print("------------------")
+    print(result)
+
 main()
 ```
 
@@ -127,17 +113,16 @@ main()
 Enter Candidate Name: Rahul
 Enter Age: 24
 Enter Qualification: Bachelor's Degree
-Enter Experience (Years): 3
+Enter Years of Experience: 3
 Enter Primary Skill: Python
-Enter Attendance Percentage: 85
 ```
 
 **Output**
 
 ```text
-===== Evaluation Report =====
-Rahul is ELIGIBLE for recruitment.
-Attendance Satisfactory (85.00%)
+Recruitment Result
+------------------
+Rahul is Eligible for Recruitment.
 ```
 
 ---
@@ -148,19 +133,18 @@ Attendance Satisfactory (85.00%)
 
 ```text
 Enter Candidate Name: Priya
-Enter Age: 21
-Enter Qualification: Bachelor's Degree
-Enter Experience (Years): 2
+Enter Age: 20
+Enter Qualification: Diploma
+Enter Years of Experience: 3
 Enter Primary Skill: Python
-Enter Attendance Percentage: 60
 ```
 
 **Output**
 
 ```text
-===== Evaluation Report =====
-Priya is ELIGIBLE for recruitment.
-ALERT: Low Attendance (60.00%)
+Recruitment Result
+------------------
+Priya is NOT Eligible (Bachelor's Degree required).
 ```
 
 ---
@@ -171,22 +155,19 @@ ALERT: Low Attendance (60.00%)
 
 ```text
 Enter Candidate Name: Kiran
-Enter Age: 17
+Enter Age: 22
 Enter Qualification: Bachelor's Degree
-Enter Experience (Years): 1
+Enter Years of Experience: 1
 Enter Primary Skill: Java
-Enter Attendance Percentage: 80
 ```
 
 **Output**
 
 ```text
-===== Evaluation Report =====
-Kiran is NOT ELIGIBLE for recruitment.
-Attendance Satisfactory (80.00%)
+Recruitment Result
+------------------
+Kiran is NOT Eligible (Minimum 2 years experience required).
 ```
-
----
-
+```
 ## 6. Screenshots
-![alt text](image.png)
+![alt text](image-1.png)
