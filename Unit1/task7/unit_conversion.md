@@ -34,16 +34,34 @@ The program should accept input from the user and display the converted values.
 
 ## 3. Flowchart
 
+``# Unit Conversion Program
+
+## Problem Statement
+
+Write a Python program to convert:
+- Kilometers to Meters
+- Meters to Centimeters
+- Kilograms to Grams
+
+## Flowchart
+
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Input Kilometers KM]
-    B --> C[Meters = KM * 1000]
-    C --> D[Input Meters M]
-    D --> E[Centimeters = M * 100]
-    E --> F[Input Kilograms KG]
-    F --> G[Grams = KG * 1000]
-    G --> H[Display Results]
+    A([Start]) --> B[/Enter Kilometers/]
+    B --> C[Convert to Meters = KM * 1000]
+    C --> D[/Enter Meters/]
+    D --> E[Convert to Centimeters = M * 100]
+    E --> F[/Enter Kilograms/]
+    F --> G[Convert to Grams = KG * 1000]
+    G --> H[/Display Results/]
     H --> I([End])
+```
+
+## Formulae
+
+- Meters = Kilometers × 1000
+- Centimeters = Meters × 100
+- Grams = Kilograms × 1000
 ```
 
 ---
