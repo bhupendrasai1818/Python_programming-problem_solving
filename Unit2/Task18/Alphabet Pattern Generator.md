@@ -18,26 +18,16 @@ Develop a Python program to generate alphabet patterns using loops.
 ---
 
 ## 3. Flowchart
-          START
-            |
-            v
-   Enter number of rows
-            |
-            v
-   Initialize alphabet = 'A'
-            |
-            v
-      Use nested loops
-            |
-            v
- Generate alphabet pattern
-            |
-            v
-     Display pattern
-            |
-            v
-           END
 
+```mermaid
+         flowchart TD
+    A([START]) --> B[/Enter number of rows/]
+    B --> C[Initialize alphabet = 'A']
+    C --> D[Use nested loops]
+    D --> E[Generate alphabet pattern]
+    E --> F[/Display pattern/]
+    F --> G([END])
+```
 ---
 
 ## 4. Source Code
