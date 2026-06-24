@@ -5,8 +5,6 @@ deduction = float(input("Enter deduction amount: "))
 
 gross_salary = basic_salary + allowance
 net_salary = gross_salary - deduction
-
-print("\n----- Payroll Details -----")
 print("Employee Name:", employee_name)
 print("Basic Salary:", basic_salary)
 print("Allowance:", allowance)

@@ -1,0 +1,94 @@
+# Tutorial Task 39: Function-Based Banking Application
+
+## 1. Problem Statement
+
+Develop a Python application that performs deposit, withdrawal, and balance enquiry operations using functions.
+
+---
+
+## 2. Algorithm
+
+1. Start
+2. Input Initial Balance
+3. Input Deposit Amount
+4. Call Deposit Function
+5. Input Withdrawal Amount
+6. Call Withdrawal Function
+7. Call Balance Enquiry Function
+8. Display Updated Balance
+9. Stop
+
+---
+
+## 3. Flowchart
+
+### Mermaid Flowchart Code (.md)
+
+```mermaid
+flowchart TD
+    A([Start])
+    B[/Input Initial Balance/]
+    C[/Input Deposit Amount/]
+    D[Call Deposit Function]
+    E[/Input Withdrawal Amount/]
+    F[Call Withdrawal Function]
+    G[Call Balance Enquiry Function]
+    H[/Display Updated Balance/]
+    I([Stop])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+```
+
+---
+
+## 4. Python Source Code
+
+```python
+def deposit(balance, amount):
+    return balance + amount
+
+def withdraw(balance, amount):
+    if amount <= balance:
+        return balance - amount
+    else:
+        print("Insufficient Balance")
+        return balance
+
+def balance_enquiry(balance):
+    print("Current Balance =", balance)
+
+balance = float(input("Enter Initial Balance: "))
+
+deposit_amount = float(input("Enter Deposit Amount: "))
+balance = deposit(balance, deposit_amount)
+
+withdraw_amount = float(input("Enter Withdrawal Amount: "))
+balance = withdraw(balance, withdraw_amount)
+
+balance_enquiry(balance)
+```
+
+---
+
+## 5. Sample Input/Output
+
+### Input
+
+```text
+Enter Initial Balance: 10000
+Enter Deposit Amount: 2000
+Enter Withdrawal Amount: 1500
+```
+
+### Output
+
+```text
+Current Balance = 10500.0
+```

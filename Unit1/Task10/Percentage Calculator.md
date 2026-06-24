@@ -53,17 +53,16 @@ print("Percentage =", percentage)
 ---
 
 ## 5. Sample Input/Output
-
 ### Input
 
-```text
+```python
 Enter Total Marks Obtained: 425
 Enter Maximum Marks: 500
 ```
 
 ### Output
 
-```text
+```python
 Percentage = 85.0
 ```
 
