@@ -27,20 +27,32 @@ Develop a Python GUI application using Tkinter to calculate and manage household
 ---
 
 ## 3. Flowchart
-
 ```mermaid
 flowchart TD
+
     A([Start])
-    B[/Input Customer Name/]
-    C[/Input Electricity Units/]
-    D[/Input Water Units/]
-    E[/Input Gas Units/]
-    F[Calculate Electricity Bill]
-    G[Calculate Water Bill]
-    H[Calculate Gas Bill]
-    I[Calculate Total Bill]
-    J[/Display Customer Details and Bill Summary/]
-    K([Stop])
+
+    B[/Enter Customer Name/]
+    C[/Enter Electricity Units/]
+    D[/Enter Water Units/]
+    E[/Enter Gas Units/]
+
+    F[Electricity Bill = Electricity Units * 6]
+
+    G[Water Bill = Water Units * 2]
+
+    H[Gas Bill = Gas Units * 8]
+
+    I[Total Bill = Electricity Bill + Water Bill + Gas Bill]
+
+    J[/Display Customer Name/]
+
+    K[/Display Electricity Bill,
+    Water Bill,
+    Gas Bill,
+    Total Bill/]
+
+    L([Stop])
 
     A --> B
     B --> C
@@ -52,6 +64,8 @@ flowchart TD
     H --> I
     I --> J
     J --> K
+    K --> L
+```
 ```
 
 ## 4. Python Source Code (Frontend - Tkinter)
