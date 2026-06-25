@@ -3,7 +3,7 @@
 ## 1. Problem Statement
 
 Write a Python program to calculate the area of a rectangle using length and breadth.
----
+
 
 ## 2. Algorithm
 
