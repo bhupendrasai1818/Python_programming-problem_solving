@@ -44,9 +44,6 @@ The program should accept two numbers as input, perform the addition operation, 
     D --> E
     E --> F
 ```
-
-```
-
 ---
 
 ## 4. Python Source Code
@@ -57,7 +54,6 @@ num2 = float(input("Enter second number: "))
 sum_result = num1 + num2
 print("Sum =", sum_result)
 ```
-
 ---
 
 ## 5. Sample Input/Output

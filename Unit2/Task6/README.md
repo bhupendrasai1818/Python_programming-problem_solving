@@ -39,13 +39,30 @@ Examples:
 
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Number num/]
+    B --> C{num < 0?}
 
+    C -->|Yes| D[Print Error Message]
+    D --> K([Stop])
 
+    C -->|No| E[Set factorial = 1]
+    E --> F[Set i = 1]
+
+    F --> G{i <= num?}
+
+    G -->|Yes| H[factorial = factorial * i]
+    H --> I[i = i + 1]
+    I --> G
+
+    G -->|No| J[Print Factorial]
+    J --> K([Stop])
+```
 
 ## 4. Python Source Code
 
-```python id="2mtnrj"
-# Program to find factorial of a number
+```python 
 
 num = int(input("Enter a number: "))
 
