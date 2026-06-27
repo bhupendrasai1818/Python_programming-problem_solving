@@ -65,3 +65,5 @@ Enter Allowances: 5000
 ```text
 Gross Salary = 30000.0
 ```
+## 6. Screenshots
+![alt text](image.png)
