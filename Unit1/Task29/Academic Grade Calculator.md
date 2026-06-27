@@ -69,6 +69,7 @@ print("Grade:", grade)
 ```
 
 ## 5. Sample Input/Output
+```
 Sample Run 1
 Enter percentage: 95
 Grade: A+
@@ -80,6 +81,7 @@ Grade: A
 Sample Run 3
 Enter percentage: 74
 Grade: B
+```
 
 ## 6. Screenshots
-![alt text](image-1.png)
+<img width="1252" height="788" alt="image" src="https://github.com/user-attachments/assets/2a784444-0266-4b1b-b733-db91c7577f2b" />

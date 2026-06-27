@@ -62,6 +62,7 @@ print("Total Travel Expense   :", total_expense)
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 
 Input
@@ -86,6 +87,7 @@ Transportation Expense : 1200.0
 Accommodation Expense  : 3000.0
 Food Expense           : 800.0
 Total Travel Expense   : 5000.0
+```
 
 ## 6. Screenshots
 

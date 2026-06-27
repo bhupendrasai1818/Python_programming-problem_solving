@@ -63,6 +63,7 @@ print("\nInsurance Premium =", premium)
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 Enter Age: 22
 Enter Coverage Amount: 500000
@@ -72,6 +73,7 @@ Sample Run 2
 Enter Age: 35
 Enter Coverage Amount: 500000
 Insurance Premium = 20000.0
+```
 
 ## 6. Screenshots
 

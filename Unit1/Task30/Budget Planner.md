@@ -44,6 +44,7 @@ print("Savings:", savings)
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 Enter Monthly Income: 50000
 
@@ -57,6 +58,7 @@ Enter Monthly Income: 30000
 Budget Allocation
 Expenditure: 21000.0
 Savings: 9000.0
+```
 
 ## 6. Screenshots
 

@@ -61,6 +61,7 @@ print("Total Emission       :", round(total_emission, 2), "kg CO2")
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 
 Input
@@ -88,6 +89,7 @@ Output
 Electricity Emission : 85.0 kg CO2
 Fuel Emission        : 46.2 kg CO2
 Total Emission       : 131.2 kg CO2
+```
 
 ## 6. Screenshots
 
