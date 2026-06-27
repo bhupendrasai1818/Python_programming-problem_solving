@@ -47,24 +47,50 @@ Non-prime numbers:
 
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number num/]
+    B --> C{num <= 1?}
+
+    C -->|Yes| D[Display Not Prime Number]
+    D --> M([Stop])
+
+    C -->|No| E[Set is_prime = True]
+    E --> F[Set i = 2]
+
+    F --> G{i < num?}
+
+    G -->|Yes| H{num mod i = 0?}
+
+    H -->|Yes| I[Set is_prime = False]
+    I --> J[Exit Loop]
+
+    H -->|No| K[i = i + 1]
+    K --> G
+
+    J --> L{is_prime = True?}
+
+    G -->|No| L
+
+    L -->|Yes| N[Display Prime Number]
+    L -->|No| O[Display Not Prime Number]
+
+    N --> M
+    O --> M
+```
 
 ## 4. Python Source Code
 
 ```python
-# Program to check whether a number is prime
-
 num = int(input("Enter a number: "))
-
 if num <= 1:
     print(num, "is not a Prime Number")
 else:
     is_prime = True
-
     for i in range(2, num):
         if num % i == 0:
             is_prime = False
             break
-
     if is_prime:
         print(num, "is a Prime Number")
     else:

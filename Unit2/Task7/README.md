@@ -36,21 +36,38 @@ Example:
 
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number of Terms/]
+    B --> C{Terms <= 0?}
+
+    C -->|Yes| D[Display Error Message]
+    D --> K([Stop])
+
+    C -->|No| E[Initialize a = 0, b = 1]
+    E --> F[Initialize i = 0]
+
+    F --> G{i < Terms?}
+
+    G -->|Yes| H[Display a]
+    H --> I[Next = a + b]
+    I --> J[Update a = b, b = Next]
+    J --> L[i = i + 1]
+    L --> G
+
+    G -->|No| K([Stop])
+```
 
 ## 4. Python Source Code
 
 ```python
-# Program to generate Fibonacci sequence
 
 terms = int(input("Enter the number of terms: "))
-
 if terms <= 0:
     print("Please enter a positive integer.")
 else:
     a, b = 0, 1
-
     print("Fibonacci Sequence:")
-
     for i in range(terms):
         print(a, end=" ")
         next_term = a + b

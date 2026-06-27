@@ -19,9 +19,20 @@ Develop a Python program to generate the multiplication table for a given number
 5. Stop the program.
 
 ---
-
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number num/]
+    B --> C[Initialize i = 1]
+    C --> D{i <= 10?}
+
+    D -->|Yes| E[Display num x i = num*i]
+    E --> F[i = i + 1]
+    F --> D
+
+    D -->|No| G([Stop])
+```
 
 
 ## 4. Python Source Code

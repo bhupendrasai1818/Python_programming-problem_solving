@@ -40,26 +40,41 @@ Examples:
 10. Stop the program.
 
 ---
-
 ## 3. Flowchart
 
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter Number num/]
+    B --> C[Store original = num]
+    C --> D[Find digits = length of num]
+    D --> E[Set total = 0]
 
+    E --> F{num > 0?}
+
+    F -->|Yes| G[digit = num mod 10]
+    G --> H[total = total + digit^digits]
+    H --> I[num = num div 10]
+    I --> F
+
+    F -->|No| J{total = original?}
+
+    J -->|Yes| K[Display Armstrong Number]
+    J -->|No| L[Display Not an Armstrong Number]
+
+    K --> M([Stop])
+    L --> M
+```
 ## 4. Python Source Code
 
 ```python
-# Program to check whether a number is an Armstrong number
-
 num = int(input("Enter a number: "))
-
 original = num
 digits = len(str(num))
 total = 0
-
 while num > 0:
     digit = num % 10
     total += digit ** digits
     num = num // 10
-
 if total == original:
     print(original, "is an Armstrong Number")
 else:
