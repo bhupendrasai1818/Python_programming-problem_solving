@@ -2,21 +2,43 @@
 
 ## 1. Problem Statement
 
-Develop a Python program to calculate the Equated Monthly Installment (EMI) for a loan based on the loan amount, annual interest rate, and repayment duration. The program should take user input and display the monthly EMI.
+Develop a Python program to calculate the Equated Monthly Installment (EMI) for a given loan amount, interest rate, and repayment duration.
+
+The program should accept the loan amount, annual interest rate, and repayment period from the user and display the monthly EMI amount.
 
 ---
 
 ## 2. Algorithm
 
-1. Start the program.
-2. Input the loan amount (Principal).
-3. Input the annual interest rate.
-4. Input the loan tenure in years.
-5. Convert annual interest rate into monthly rate.
-6. Convert loan tenure into months.
-7. Apply the EMI formula.
-8. Display the EMI amount.
-9. End the program.
+1. Start
+
+2. Input loan amount
+
+3. Input annual interest rate
+
+4. Input repayment duration (in years)
+
+5. Convert annual interest rate into monthly interest rate
+
+   * Monthly Rate = Annual Rate / (12 × 100)
+
+6. Convert repayment duration into months
+
+   * Number of Months = Years × 12
+
+7. Calculate EMI using the formula
+
+   * EMI = P × R × (1 + R)^N / ((1 + R)^N − 1)
+
+   Where:
+
+   * P = Loan Amount
+   * R = Monthly Interest Rate
+   * N = Number of Months
+
+8. Display loan details and EMI amount
+
+9. Stop
 
 ---
 
@@ -24,65 +46,105 @@ Develop a Python program to calculate the Equated Monthly Installment (EMI) for 
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[/Input Loan Amount/]
-    B --> C[/Input Annual Interest Rate/]
-    C --> D[/Input Loan Tenure in Years/]
-    D --> E[Convert Annual Rate to Monthly Rate]
-    E --> F[Convert Years into Months]
-    F --> G[Calculate EMI using Formula]
-    G --> H[/Display EMI/]
-    H --> I([End])
+    A([Start]) --> B[/Enter Loan Amount/]
+    B --> C[/Enter Annual Interest Rate/]
+    C --> D[/Enter Repayment Duration in Years/]
+
+    D --> E[Monthly Rate = Annual Rate ÷ 12 ÷ 100]
+    E --> F[Months = Years × 12]
+
+    F --> G[EMI Calculation]
+
+    G --> H[/Display Loan Amount/]
+    H --> I[/Display Interest Rate/]
+    I --> J[/Display Duration/]
+    J --> K[/Display EMI Amount/]
+
+    K --> L([Stop])
 ```
 
 ---
 
 ## 4. Python Source Code
 
+```python
+loan_amount = float(input("Enter Loan Amount: "))
+annual_rate = float(input("Enter Annual Interest Rate (%): "))
+years = int(input("Enter Repayment Duration (Years): "))
 
-principal = float(input("Enter loan amount: "))
-annual_rate = float(input("Enter annual interest rate (%): "))
-years = int(input("Enter loan tenure (in years): "))
-
-# Convert annual interest rate into monthly rate
 monthly_rate = annual_rate / (12 * 100)
-
-# Convert years into months
 months = years * 12
 
-# EMI calculation
-emi = (principal * monthly_rate * (1 + monthly_rate) ** months) / ((1 + monthly_rate) ** months - 1)
+emi = (loan_amount * monthly_rate * (1 + monthly_rate) ** months) / \
+      ((1 + monthly_rate) ** months - 1)
 
-# Display result
-print("\nLoan Details:")
-print("Principal Amount:", principal)
+print("\n----- Loan EMI Details -----")
+print("Loan Amount:", loan_amount)
 print("Annual Interest Rate:", annual_rate, "%")
-print("Loan Tenure:", years, "years")
-print("Monthly EMI: ₹", round(emi, 2))
+print("Repayment Duration:", years, "Years")
+print("Monthly EMI = ₹", round(emi, 2))
 ```
 
 ---
 
-## 5. Sample Input/Output
+## 5. Sample Input / Output
 
-### Input:
+### Sample 1
+
+**Input:**
 
 ```text
-Enter loan amount: 500000
-Enter annual interest rate (%): 8.5
-Enter loan tenure (in years): 5
+Enter Loan Amount: 500000
+Enter Annual Interest Rate (%): 10
+Enter Repayment Duration (Years): 5
 ```
 
-### Output:
+**Output:**
 
 ```text
-Loan Details:
-Principal Amount: 500000.0
-Annual Interest Rate: 8.5 %
-Loan Tenure: 5 years
-Monthly EMI: ₹ 10258.34
+----- Loan EMI Details -----
+Loan Amount: 500000.0
+Annual Interest Rate: 10.0 %
+Repayment Duration: 5 Years
+Monthly EMI = ₹ 10623.52
+```
+
+### Sample 2
+
+**Input:**
+
+```text
+Enter Loan Amount: 1000000
+Enter Annual Interest Rate (%): 8
+Enter Repayment Duration (Years): 10
+```
+
+**Output:**
+
+```text
+----- Loan EMI Details -----
+Loan Amount: 1000000.0
+Annual Interest Rate: 8.0 %
+Repayment Duration: 10 Years
+Monthly EMI = ₹ 12132.84
 ```
 
 ---
 
-## 6. Screenshots
-[alt text](<Screenshot (47).png>)
+## 6. Screenshot
+
+![alt text]({3CFA0A62-82FF-40A9-BAD0-CD0D4A86A452}.png)
+
+---
+
+## 7. EMI Formula
+
+[
+EMI = \frac{P \times R \times (1+R)^N}{(1+R)^N - 1}
+]
+
+Where:
+
+* P = Loan Amount
+* R = Monthly Interest Rate
+* N = Number of Monthly Installments
