@@ -1,112 +1,64 @@
-# Unit Conversion Program
-
-## 1. Problem Statement
-
-Write a Python program to convert:
-
-* Kilometers to Meters
-* Meters to Centimeters
-* Kilograms to Grams
-
-The program should accept input from the user and display the converted values.
-
----
-
-## 2. Algorithm
-
-1. Start the program.
-2. Input distance in kilometers.
-3. Convert kilometers to meters using:
-
-   * Meters = Kilometers × 1000
-4. Input distance in meters.
-5. Convert meters to centimeters using:
-
-   * Centimeters = Meters × 100
-6. Input weight in kilograms.
-7. Convert kilograms to grams using:
-
-   * Grams = Kilograms × 1000
-8. Display the converted values.
-9. Stop the program.
-
----
-
-## 3. Flowchart
-
-``# Unit Conversion Program
+# Tutorial Task 7: Unit Conversion Program
 
 ## Problem Statement
 
-Write a Python program to convert:
-- Kilometers to Meters
-- Meters to Centimeters
-- Kilograms to Grams
+Write a Python program to convert kilometers to meters, meters to centimeters, and kilograms to grams.
+
+## Algorithm
+
+1. Input kilometers and convert to meters.
+2. Input meters and convert to centimeters.
+3. Input kilograms and convert to grams.
+4. Display the results.
 
 ## Flowchart
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[/Enter Kilometers/]
-    B --> C[Convert to Meters = KM * 1000]
-    C --> D[/Enter Meters/]
-    D --> E[Convert to Centimeters = M * 100]
-    E --> F[/Enter Kilograms/]
-    F --> G[Convert to Grams = KG * 1000]
-    G --> H[/Display Results/]
+    A([Start]) --> B[Input Kilometers]
+    B --> C[Convert KM to Meters]
+    C --> D[Input Meters]
+    D --> E[Convert Meters to Centimeters]
+    E --> F[Input Kilograms]
+    F --> G[Convert KG to Grams]
+    G --> H[Display Results]
     H --> I([End])
 ```
 
-## Formulae
-
-- Meters = Kilometers × 1000
-- Centimeters = Meters × 100
-- Grams = Kilograms × 1000
-```
-
----
-
-## 4. Python Source Code
+## Python Code
 
 ```python
-
-
-km = float(input("Enter distance in kilometers: "))
+km = float(input("Enter Kilometers: "))
 meters = km * 1000
 
-km = float(input("Enter distance in meters: "))
+m = float(input("Enter Meters: "))
 centimeters = m * 100
 
-
-kg = float(input("Enter weight in kilograms: "))
+kg = float(input("Enter Kilograms: "))
 grams = kg * 1000
 
-
-print("\n----- Conversion Results -----")
-print(km, "kilometers =", meters, "meters")
-print(m, "meters =", centimeters, "centimeters")
-print(kg, "kilograms =", grams, "grams")
+print("\n--- Conversion Results ---")
+print("Meters:", meters)
+print("Centimeters:", centimeters)
+print("Grams:", grams)
 ```
 
----
-
-## 5. Sample Input/Output
-
-### Sample Input
+## Sample Input
 
 ```text
-Enter distance in kilometers: 5
-Enter distance in meters: 10
-Enter weight in kilograms: 2
+Enter Kilometers: 5
+Enter Meters: 10
+Enter Kilograms: 2
 ```
 
-### Sample Output
+## Sample Output
 
 ```text
-5.0 kilometers = 5000.0 meters
-10.0 meters = 1000.0 centimeters
-2.0 kilograms = 2000.0 grams
+--- Conversion Results ---
+Meters: 5000.0
+Centimeters: 1000.0
+Grams: 2000.0
 ```
 
 ### screenshot
-![alt text](image.png)
+![alt text](image-1.png)
