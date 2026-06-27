@@ -51,6 +51,7 @@ print("Monthly Savings  :", savings)
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 
 Input
@@ -78,6 +79,7 @@ Output
 Monthly Income   : 30000.0
 Monthly Expenses : 22000.0
 Monthly Savings  : 8000.0
+```
 
 ## 6. Screenshots
 
