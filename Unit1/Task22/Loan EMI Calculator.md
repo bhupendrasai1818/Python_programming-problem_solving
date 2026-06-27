@@ -131,6 +131,10 @@ Monthly EMI = ₹ 12132.84
 
 ---
 
+<<<<<<< HEAD
+## 6. Screenshots
+![alt text](image.png)
+=======
 ## 6. Screenshot
 
 ![alt text]({3CFA0A62-82FF-40A9-BAD0-CD0D4A86A452}.png)
@@ -148,3 +152,4 @@ Where:
 * P = Loan Amount
 * R = Monthly Interest Rate
 * N = Number of Monthly Installments
+>>>>>>> 5df6faf600ce9d8abbb59d0a17a3ec772a99c307
