@@ -71,9 +71,9 @@ Insurance Premium = 25000.0
 
 Sample Run 2
 Enter Age: 35
-```
 Enter Coverage Amount: 500000
 Insurance Premium = 20000.0
+```
 
 ## 6. Screenshots
 
