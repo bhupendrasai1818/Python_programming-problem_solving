@@ -25,7 +25,6 @@ Develop a Python application to calculate and manage household utility bills. Th
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
 
 ```mermaid
 flowchart TD
