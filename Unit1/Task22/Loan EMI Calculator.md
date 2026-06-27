@@ -85,4 +85,4 @@ Monthly EMI: ₹ 10258.34
 ---
 
 ## 6. Screenshots
-[alt text](<Screenshot (47).png>)
+![alt text](image.png)
