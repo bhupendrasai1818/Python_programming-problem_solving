@@ -60,6 +60,7 @@ print("Total Amount    :", round(total_amount, 2))
 
 ## 5. Sample Input/Output
 
+```
 Sample Run 1
 
 Input
@@ -87,6 +88,7 @@ Recharge Amount : 299.0
 GST (18%)       : 53.82
 Service Charge  : 14.95
 Total Amount    : 367.77
+```
 
 ## 6. Screenshots
 
