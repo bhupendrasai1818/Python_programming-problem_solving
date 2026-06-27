@@ -18,8 +18,6 @@ Write a Python program to convert temperature from Celsius to Fahrenheit.
 
 ## 3. Flowchart
 
-### Mermaid Flowchart Code (.md)
-
 ```mermaid
 flowchart TD
     A([Start])

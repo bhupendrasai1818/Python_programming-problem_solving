@@ -1,9 +1,13 @@
-km = float(input("Enter distance in kilometers: "))
+km = float(input("Enter Kilometers: "))
 meters = km * 1000
-m = float(input("Enter distance in meters: "))
+
+m = float(input("Enter Meters: "))
 centimeters = m * 100
-kg = float(input("Enter weight in kilograms: "))
+
+kg = float(input("Enter Kilograms: "))
 grams = kg * 1000
-print(km, "kilometers =", meters, "meters")
-print(m, "meters =", centimeters, "centimeters")
-print(kg, "kilograms =", grams, "grams")
+
+print("\n--- Conversion Results ---")
+print("Meters:", meters)
+print("Centimeters:", centimeters)
+print("Grams:", grams)
