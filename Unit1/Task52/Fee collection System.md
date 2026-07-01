@@ -30,12 +30,20 @@ Develop a Python application to calculate student fee collections and pending ba
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Input Student Name]
-    B --> C[Input Total Fee Amount]
-    C --> D[Input Fee Amount Paid]
-    D --> E[Calculate Pending Balance]
-    E --> F[Display Fee Details and Pending Balance]
-    F --> G([End])
+    A([Start])
+    B[/Input Student Name/]
+    C[/Input Total Fee Amount/]
+    D[/Input Fee Amount Paid/]
+    E[Calculate Pending Balance]
+    F[/Display Fee Details and Pending Balance/]
+    G([End])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
 ```
 
 ---

@@ -51,3 +51,4 @@ Given Number is an Odd Number
 ```
 
 ## Screenshots
+![alt text](<Screenshot 2026-06-22 101749.png>)

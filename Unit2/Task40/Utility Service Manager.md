@@ -121,51 +121,37 @@ while True:
 
 **Input**
 
-```text
 1
 10
 20
 1
-```
 
 **Output**
 
-```text
 Result = 30.0
-```
 
 ### Sample Run 2 (Temperature Converter)
 
 **Input**
 
-```text
 2
 25
-```
 
 **Output**
 
-```text
 Temperature in Fahrenheit = 77.0
-```
 
 ### Sample Run 3 (BMI Calculator)
 
 **Input**
 
-```text
 3
 60
 1.65
-```
 
 **Output**
 
-```text
 BMI = 22.04
-```
-
----
 
 ## 6. Screenshots
 
@@ -173,37 +159,29 @@ Take and upload the following screenshots:
 
 ### Screenshot 1: Main Menu
 
-```text
 --- Utility Service Manager ---
 1. Calculator
 2. Temperature Converter
 3. BMI Calculator
 4. Exit
-```
 
 ### Screenshot 2: Calculator Output
 
-```text
 Enter first number: 10
 Enter second number: 20
 Choose operation: 1
 Result = 30.0
-```
 
 ### Screenshot 3: Temperature Converter Output
 
-```text
 Enter temperature in Celsius: 25
 Temperature in Fahrenheit = 77.0
-```
 
 ### Screenshot 4: BMI Calculator Output
 
-```text
 Enter weight in kg: 60
 Enter height in meters: 1.65
 BMI = 22.04
-```
 
 ### Screenshot 5: Exit Output
 ![alt text](image.png)

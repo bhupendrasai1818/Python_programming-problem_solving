@@ -35,16 +35,27 @@ Develop a Python application to evaluate customer eligibility for loans based on
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Input Customer Name]
-    B --> C[Input Monthly Income]
-    C --> D[Input Monthly Expenses]
-    D --> E[Calculate Savings]
-    E --> F{Savings >= 10000?}
-    F -- Yes --> G[Eligible for Loan]
-    F -- No --> H[Not Eligible for Loan]
-    G --> I[Display Result]
+    A([Start])
+    B[/Input Customer Name/]
+    C[/Input Monthly Income/]
+    D[/Input Monthly Expenses/]
+    E[Calculate Savings]
+    F{Is Savings >= 10000?}
+    G[/Display "Eligible for Loan"/]
+    H[/Display "Not Eligible for Loan"/]
+    I([End])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    F -->|Yes| G
+    F -->|No| H
+
+    G --> I
     H --> I
-    I --> J([End])
 ```
 
 ---

@@ -65,3 +65,5 @@ Enter Rate Per Unit: 6
 ```text
 Electricity Bill Amount = 1500.0
 ```
+## 6. Screenshots
+![alt text](image.png)
