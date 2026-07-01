@@ -24,14 +24,24 @@ Develop a Python application to analyze spending behavior and generate expenditu
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Input Food Expense]
-    B --> C[Input Transportation Expense]
-    C --> D[Input Entertainment Expense]
-    D --> E[Input Miscellaneous Expense]
-    E --> F[Calculate Total Expenditure]
-    F --> G[Calculate Average Expenditure]
-    G --> H[Display Expenditure Report]
-    H --> I([End])
+    A([Start])
+    B[/Input Food Expense/]
+    C[/Input Transportation Expense/]
+    D[/Input Entertainment Expense/]
+    E[/Input Miscellaneous Expense/]
+    F[Calculate Total Expenditure]
+    G[Calculate Average Expenditure]
+    H[/Display Expenditure Report/]
+    I([End])
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
 ```
 
 ---
